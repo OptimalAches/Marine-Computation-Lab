@@ -17,12 +17,19 @@ from plots import (
 st.title("Shear Force and Bending Moment Visualization")
 
 # Input parameters for calculateResults
+# st.header("Ship Parameters")
+# lamdaByL = st.number_input("λ / L:", value=1.2, step=0.01)
+# length = st.number_input("Length (m):", value=122.1, step=0.1)
+# draft = st.number_input("Draft (m):", value=7.8, step=0.1)
+# displacement = st.number_input("Displacement (tons):", value=14000, step=100)
+# bml = st.number_input("BML (m):", value=128.1, step=0.1)
+
 st.header("Ship Parameters")
 lamdaByL = st.number_input("λ / L:", value=1.2, step=0.01)
-length = st.number_input("Length (m):", value=122.1, step=0.1)
-draft = st.number_input("Draft (m):", value=7.8, step=0.1)
-displacement = st.number_input("Displacement (tons):", value=14000, step=100)
-bml = st.number_input("BML (m):", value=128.1, step=0.1)
+length = st.number_input("Length (m):", value=179.5, step=0.1)
+draft = st.number_input("Draft (m):", value=10, step=0.1)
+displacement = st.number_input("Displacement (tons):", value=42650, step=100)
+bml = st.number_input("BML (m):", value=228.34, step=0.1)
 
 # Upload .txt file
 st.header("Upload Input File")
